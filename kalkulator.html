@@ -8,6 +8,18 @@
 				var result = Number(first) + Number(second);
 				document.getElementById("result").value = result;
 			}
+			function minus(){
+				var first = document.getElementById("first").value;
+				var second = document.getElementById("second").value;
+				var result = Number(first) - Number(second);
+				document.getElementById("result").value = result;
+			}
+			function mutliplication(){
+				var first = document.getElementById("first").value;
+				var second = document.getElementById("second").value;
+				var result = Number(first) * Number(second);
+				document.getElementById("result").value = result;
+			}
 		</script>
 	</head>
 	<body>
@@ -17,5 +29,7 @@
 		<input id="result"></input>
 		<br/>
 		<button onClick='plus()'>+</button>
+		<button onClick='minus()'>-</button>
+		<button onClick='mutliplication()'>*</button>
 	</body>
 </html>
