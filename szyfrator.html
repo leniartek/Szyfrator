@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<title>Szyfrator</title>
+		<!-- abcdefghijklmnopqrstuwxyz -->
+		<!-- xyzabcdefghijklmnopqrstuw -->
+		<script>
+			// szyfrator
+			function a(){
+				var textElement = document.getElementById("text");
+				var text = textElement.value;
+				textElement.value = text + "y";
+			}
+			function b(){
+				var textElement = document.getElementById("text");
+				var text = textElement.value;
+				textElement.value = text + "z";
+			}
+			function c(){
+				var textElement = document.getElementById("text");
+				var text = textElement.value;
+				textElement.value = text + "a";
+			}
+			// deszyfrator
+			function yD(){
+				var textElement = document.getElementById("text2");
+				var text = textElement.value;
+				textElement.value = text + "a";
+			}
+			function zD(){
+				var textElement = document.getElementById("text2");
+				var text = textElement.value;
+				textElement.value = text + "b";
+			}
+			function aD(){
+				var textElement = document.getElementById("text2");
+				var text = textElement.value;
+				textElement.value = text + "c";
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Szyfrator<h1>
+		<textarea   id="text"></textarea >
+		<br/>
+		<button onClick='a()'>a</button>
+		<button onClick='b()'>b</button>
+		<button onClick='c()'>c</button>
+		
+		<h1>Deszyfrator<h1>
+		<textarea  id="text2"></textarea >
+		<br/>
+		<button onClick='yD()'>y</button>
+		<button onClick='zD()'>z</button>
+		<button onClick='aD()'>a</button>
+	</body>
+</html>
